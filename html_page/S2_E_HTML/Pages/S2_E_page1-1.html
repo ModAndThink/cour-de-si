@@ -1,0 +1,128 @@
+<html>
+<head>
+	<title>SI-S2-ARDUINO</title>
+
+<link rel="stylesheet" href="../SI_Style.css" />
+
+
+</head>
+<body>
+<a name="haut"></a>
+<h1>S.I. - S2 - Echanges et communication d'informations </h1><br>
+<div id="Bande-BasPage" >Page optimisée pour Firefox -------------------------------- AC@NDSF</div>
+<div id="menu">
+	<p></p>
+	<img align="right" src="../Images/Teams Image 1SI.JPG">
+	<h2 align="middle">Séquence 2</h2>
+	<ul>
+		<li><a href="../S2_E_index.html">Accueil</a></li>
+		<li><a href="../Pages/S2_E_page1.html">ARDUINO</a></li>
+		<li><a href="../Pages/S2_E_page2.html">Les capteurs</a></li>
+		<li><a href="../Pages/S2_E_page3.html">Résultats attendus</a></li>
+		<li><a href="../Pages/S2_E_page4.html">Compétences</a></li>
+		</a>
+	</ul>
+</div>
+
+<div id="page">
+	<img align="right" src="../Images/P1-2-Cartes.png" alt="Cartes">
+	<h2>Initiation à la programmation</h2>
+
+	<h3>Le matériel</h3>
+	<font size="4" color="black">
+		<ul>
+			<li>Ordinateur;</li>
+			<li>Cordon USB;</li>
+			<li>Carte Arduino UNO;</li>
+			<li>Maquette Feux tricolores.</li>
+		</ul>
+	</font>
+<hr>
+	<h2>Rappel</h2>
+	<font size="4" color="black">
+		<p align="justify">Mettre en place la maquette des feux tricolores sur la carte Arduino UNO et reprendre le code [Blink.ino] présent dans l'IDE Arduino [Menu Fichier/Exemples/01.Basic/Blink] afin de remplacer le port 13 par le port 9, qui correspond à la Led Rouge de la voie B de la maquette.</p>
+		<p align="middle"><img src="../Images/P1-1-Blink.png" alt="Modifications Blink.ino"></p>
+		<p align="justify">Il suffit de mettre le chiffre 9 à la place de 13 pour déclarer la variable correspondant à la Led rouge de la voie B.</p>
+	</font>
+	<hr>
+	<h2>La déclaration des variables</h2>
+	<font size="4" color="black">
+		<p align="justify">La variable est un élément utile au bon fonctionnement d'un système ( état d'un capteur ou d'un  actionneur). Elle sera <strong>nommée et stockée</strong> pour une utilisation ultérieure dans le programme. Elle peut être de différentes formes liées à l'espace mémoire nécessaire pour le stockage :</p>
+		<ul>
+			<li><strong>booléan</strong> : C'est une variable qui ne peut prendre que deux valeurs : "true ou false", VRAI ou FAUX, "1 ou 0", "HIGH ou LOW". Chaque variable de type boolean nécessite un octet de mémoire. </li>
+			<li><strong>char</strong> : C'est une variable qui contient une valeur correspondant à un caractère. Les caractères unitaires sont écrits entre guillements uniques [ 'A' ] , les chaînes de caractères sont écrites entre guillemets double [ "Bonjour" ]. Les caractères sont stockés de la même façon que les nombres : à chaque caractère correspond une (valeur numérique comprise entre 0 et 127 Code ASCII). La variable est de type signée, ce qui veut dire qu'elle peut contenir des valeur allant de -128 à +127. Pour une valeur de type octet (8 bits) non signé (unsigned), utiliser le type de variable byte. </li>
+			<li><strong>byte</strong> :C'est une variable stockée sur un octet (8 bits), un nombre entier non-signé, d'une valeur de 0 à 255. </li>
+			<li><strong>int</strong> : C'est une variable de type int (pour integer, entier en anglais) pour le stockage de nombres, sur une valeur deux 2 octets [ de - 32 768 à 32 767].</li>
+			<li><strong>unsigned int</strong> : C'est une variable de type int (pour integer, entier en anglais) pour le stockage de nombres, sur une valeur non signée de  deux 2 octets [ de 0 à 65 535].</li>
+			<li><strong>long</strong> :C'est une variable de type long qui permet le stockage de nombre entiers signés sur 4 octets [ de -2 147 483 648 à + 2 147 483 647]. </li>
+			<li><strong>unsigned long</strong> : C'est une variable de type long qui permet le stockage de nombre entiers non signés sur 4 octets [ de 0 à + 4 294 967 295]. </li>
+			<li><strong>float</strong> :C'est une variable à "virgule-flottante", c'est à dire des nombres à virgules. Les nombres à virgule sont souvent utilisés pour l'expression des valeurs analogiques et continues, parce qu'ils ont une meilleure résolution que les nombres entiers. Les nombres à virgule ainsi stockés peuvent prendre des valeurs aussi élevées que 3.4028235E+38 et aussi basse que -3.4028235E+38. Ils sont stockés sur 4 octets (32 bits) de mémoire. Les variables float ont seulement 6 à 7 chiffres en tout. </li>
+		</ul> 
+		<p align="middle"><img src="../Images/P1-3-variables.png" alt="Variables=mémoire"></p>
+	</font>
+	<hr>
+	<h2>Les feux cligontants à l'orange</h2>
+	<font size="4" color="black">
+		<p align="justify">En extrapolant le programme [Blink.ino] qui est présent dans l'IDE Arduino [Menu Fichier/Exemples/01.Basic/Blink] il est aisé de créer le code nécessaire au clignotement des deux led oranges de la maquette.</p>
+		<p align="middle"><video width="640" height="480" controls>
+      		<source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+     		<source src="../Vidéos/Feux_clignotants.mp4" type=video/mp4></video></p>
+		<p align="middle"><img src="../Images/P1-4-Feuxclignotant.png" alt="Feux cligontants"></p>
+		<br>
+	</font>
+	<font size="5" color="black">
+		<a href="../Documents/S2-ARDUINO/Feux_Clignotant_2022/Feux_Clignotant_2022.ino" target=_blank>Le code Arduino "Feux_Clignotant_2022.ino"</a><br></li>
+	</font>
+	<br>
+	<hr>
+	<h2>Les feux tricolores</h2>
+	<font size="4" color="black">
+		<p align="justify">Maintenant, créer le code nécessaire pour la gestion des feux tricolores de la maquette. Le début du cycle doit impérativement commencer par l'allumage des deux Leds Rouges durant deux secondes. La durée d'allumage des Leds orange devra être de une seconde et celle des Leds Vertes de cinq secondes.</p>
+		<p align="middle"><video width="640" height="480" controls>
+      		<source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+     		<source src="../Vidéos/Feux_tricolores.mp4" type=video/mp4></video></p>
+     	<p align="middle"><img src="../Images/P1-4-Feuxtricolores.png" alt="Feux cligontants"></p>
+		<br>
+	</font>
+	<font size="5" color="black">
+		<a href="../Documents/S2-ARDUINO/Feux_Tricolores_2022/Feux_Tricolores_2022.ino" target=_blank>Le code Arduino "Feux_Tricolores_2022.ino"</a><br></li>
+	</font>
+	<br>
+	<hr>
+	<h2>La liaison série</h2>
+	<font size="4" color="black">
+		<p align="justify">La liaison série est utilisée lorsqu'il est nécessaire que la carte microcontrôleur (Carte UNO) communique avec des composants extérieurs (Ordinnateur, Buetooth, Wifi, etc.). Dans ce cas, il faut déclarer l'ouverture du port série ainsi que la vitesse de communication [Serial.begin(9600);]. Le protocole utilisé est basé sur le <a href="http://www.mon-club-elec.fr/pmwiki_reference_arduino/pmwiki.php?n=Main.CodeASCII" target=_blank>code ASCII</a>.</p>
+	</font>
+	<h3>Communication et moniteur série</h3>
+	<font size="4" color="black">
+		<p align="justify">Ce premier exemple permet de comprendre comment le dialogue s'effectue entre la carte et le moniteur série, à la fois en lecture [Serial.read ()] et en écriture [Serial.write ()] sur le port série (Rx, Tx). Dans le cas de l'envoie d'un message [Tx du moniteur série à la carte] le ou les caractères envoyés sont stockés et mis à disposition avec  [Serial.available ()]. Ensuite, cette donnée est affectée à la variable [DonneeEntrante] pour être traitée par le code.</p>
+		<p align="justify">Noter que dans cet exemple, un entête et des consignes sont présents dans [void setup] afin d'informer l'utilisateur, ce moniteur série peut donc être utilisé comme IHM.</p>
+     	<p align="middle"><img src="../Images/P1-4-LettreA.png" alt="LettreA"></p>
+		<br>
+	</font>
+	<font size="5" color="black">
+		<a href="../Documents/S2-ARDUINO/Communication_serie_lettreA/Communication_serie_lettreA.ino" target=_blank>Le code Arduino "Communication_serie_lettreA.ino"</a><br></li>
+	</font>
+	<br>
+	<h3>Communication série et choix de fonctionnement</h3>
+	<font size="4" color="black">
+		<p align="justify">Ce programme permet de se familiariser avec la communication série et de comprendre les différentes possibilités pour afficher un message.L'utilisateur est invité à effectuer un choix, le code met en évidence ce choix et la création de fonction (sous-programme).</p>
+		<p align="justify">La création de sous programme, qui ne sont que des fonctions du point de vue du microcontroleur, s'effectue avec la commande [ void NomDeLaFonction () {// déroulement du sous-programme } ]</p>
+		<p align="justify">L'écriture des différentes possibilités d'affichage de texte sur le moniteur série apparait en boucle.... La saisie du caractère <strong>1</strong> bascule le programme dans le sous-programme 1 qui affiche <strong>Bonjour</strong> en boucle, la saisie du caractère <strong>2</strong> bascule le programme dans le sous-programme 2 qui affiche <strong>Au Revoir</strong> en boucle.</p>
+		<br>
+		<p align="middle"><img src="../Images/P1-4-Sousprogramme.png" alt="Sousprogramme"></p>
+	</font>
+	<font size="5" color="black">
+		<a href="../Documents/S2-ARDUINO/Communication_serie_2022/Communication_serie_2022.ino" target=_blank>Le code Arduino "Communication_serie_2022.ino"</a><br></li>
+	</font>
+	<br>
+	<hr>
+	<font size="5" color="black">
+	<a href="../Pages/S2_E_page1.html">RETOUR</a><br>
+	</font>
+
+
+</div>
+
+</body>
+</html>

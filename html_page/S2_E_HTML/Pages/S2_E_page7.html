@@ -1,0 +1,146 @@
+<html>
+<head>
+	<title>SI-S2-TP-Résultats attendus</title>
+	<link rel="stylesheet" href="../SI_Style.css" />
+</head>
+<body>
+	<a name="haut"></a>
+	<h1>S.I. - S2 - Echanges et communication d'informations </h1><br>
+<div id="Bande-BasPage" >Page optimisée pour Firefox -------------------------------- AC@NDSF</div>
+	<div id="menu">
+		<p></p>
+		<img align="right" src="../Images/Teams Image 1SI.JPG">
+		<h2 align="middle">Séquence 2</h2>
+		<ul>
+			<li><a href="../S2_E_index.html">Accueil</a></li>
+			<li><a href="../Pages/S2_E_page1.html">ARDUINO</a></li>
+			<li><a href="../Pages/S2_E_page2.html">Les capteurs</a></li>
+			<li><a href="../Pages/S2_E_page3.html">Résultats attendus</a></li>
+			<li><a href="../Pages/S2_E_page4.html">Compétences</a></li>
+		</ul>
+	</div>
+
+<div id="page">
+	<h2>Evaluer mes compétences</h2>
+		<font size="5" color="blue">
+			<p >Les exercices proposés doivent vous permettre de vous familiariser avec les questionnements possibles sur vos nouvelles connaissances.</p>
+		</font>
+		<p align="middle"><img src="../Images/P7_1.png" alt="Chaine de mesure"></p>
+
+	<h3>Déterminer les caractéristiques d'une chaine d'information</h3>
+	<font size="5" color="black">
+		<ul>
+			<li><a href="#A1">Déterminer les caractéristiques d'une chaine de mesure ;</a></li>
+			<li><a href="#A2">Transmettre des informations;</a></li>
+		</ul>
+	</font>
+<hr>
+
+<section id="A1">
+	<h3>Exercice 1 : Déterminer les caractéristiques d'une chaine de mesure</h3>
+		<font size="4" color="black">
+		<p align="justify">En exploitant la chaine de mesure représentée ci-dessous et le graphique représentant les signaux analogique et numérique:</p>
+		<ol>
+			<li>Donner les caractéristiques de la grandeur physique d'entrée du diviseur de tension;</li>
+			<li>Donner les caractéristiques de la grandeur physique d'entrée dans le C.A.N.;</li>
+			<li>Donner les caractéristiques de la grandeur physique de sortie du C.A.N.;</li>
+			<li>Sur combien de bits travaille le C.A.N., combien de valeurs peut-il renvoyer et quelle sa résolution ?</li>
+			<li>Déterminer la période d'échantillonage et la fréquence;</li>
+			<li>Le temps d'échantillonage étant de 4 ms, combien de bits seront mémorisés par le système?</li>
+			<li>Sur une durée de 5 minutes, combien de bits devront être mémorisés par le système? Exprimer ce résultat en octet. </li>
+		</ol>
+	</font>
+		<p align="middle"><img src="../Images/P7_2.png" alt="P7_Capteur de tension"></p>
+		<p align="middle"><img src="../Images/P7_3.png" alt="P7_Capteur de tension_courbe"></p>
+		<a href="../Pages/S2_E_exercice1.html">Exercice 1 : Réponses</a><br>
+		<a href="#haut">Retour en haut de la page</a><br>
+		<hr>
+
+<h3>Exercice 2 : Déterminer les caractéristiques d'une chaine de mesure</h3>
+		<font size="4" color="black">
+		<p align="justify">L’article 3 du décret n° 2019-1082 du23 octobre 2019 relatif à la réglementation des engins de déplacement personnel (E.D.P.) motorisé (non thermique) impose une vitesse maximale de 25 km/h. Un des moyens utilisés est un capteur à lame souple (ILS ou Reed). Lorsqu’un aimant passe devant le capteur, le circuit électrique  est fermé. Le nombre de passage de l’aimant en fonction du temps est donc proportionnel à la vitesse de l’engin.  L’aimant est placé sur un rayon de la roue et le capteur est solidaire du cadre de l’engin. A chaque tour, une impulsion électrique est générée.</p>
+		<p>En exploitant la chaine de mesure représentée ci-dessous et les graphiques fournis:</p>
+		<ol>
+			<li>Relever les valeurs de "Th", "Tb" et "T";</li>
+			<li>A partir du chronogramme fourni, déterminer la vitesse de rotation de la roue en tr/min et la vitesse de l'engin;</li>
+			<li>Déterminer l'équation de la courbe qui met en relation la vitesse en tr/s  et la valeur "C_mot" renvoyée par le C.A.N.;</li>
+			<li>Calculer la valeur "C_mot"  pour une vitesse de l'engin de 25 km/h.</li>
+		</ol>
+	</font>
+		<p align="middle"><img src="../Images/P7_4.png" alt="P7_4"></p>
+		<p align="middle"><img src="../Images/P7_5.png" alt="P7_5"></p>
+		<a href="../Pages/S2_E_exercice2.html">Exercice 2 : Réponses</a><br>
+		<a href="#haut">Retour en haut de la page</a><br>
+
+</section>
+<hr><br>
+<hr><br>
+
+<section id="A2">
+	<h3>Exercice 3: Transmettre des informations</h3>
+		<font size="4" color="black">
+			<img align="right" src="../Images/P7_Stepper.png" alt="Stepper">
+		<p align="justify">Un stepper est un dispositif qui permet d’effectuer une activité physique qui sollicite les muscles nécessaires à la montée des marches d’un escalier. Ce modèle communique avec une application sur téléphone mobile au travers des modules de communication Bluetooth. L'information transmise sera essentiellement le nombre de montée de  "marches" . La liaison utilisée entre le traitement et le module Bluetooth est une liaison série la vitesse de transmission, en Bauds (bits par seconde) de 9600 Bd.</p>
+		<p>La constitution de la trame "ID Stepper" est :</p>
+		<ul>
+			<li>le début de transmission « bit start » ( « 0 »);</li>
+			<li>le nombre de bits transmis est de 8 bits;</li>
+			<li>pas de bit de parité;</li>
+			<li>la fin de la transmission  « bit Stop » ( « 1 »);</li>
+			<li>l’ordre de transmission: on commence par le bit de poids faible jusqu'au bit de poids fort;</li>
+			<li>le niveau de tension TTL niveau haut 3 V, niveau bas 0 V.</li>
+		</ul>
+			<p align="middle"><img src="../Images/P7_Stepper_trame.png" alt="P7_Stepper_trame"></p>
+
+
+		<p>En exploitant les données ci-dessus:</p>
+		<ol>
+			<li>Convertir l'identifiant « ID Stepper » 45 (en base décimale) en binaire sur 8 bits;</li>
+			<li>Compléter le chronogramme représentant le début de la trame de transmission série qui correspond à l’ID Stepper 45.</li>
+			<p align="middle"><img src="../Images/P7_Stepper_trame45.png" alt="P7_Stepper_trame45"></p>
+		</ol>
+	</font>
+		
+		<a href="../Pages/S2_E_exercice3.html">Exercice 3 : Réponses</a><br>
+		<a href="#haut">Retour en haut de la page</a><br>
+		<hr>
+
+<h3>Exercice 4 : Transmettre des informations</h3>
+		<font size="4" color="black">
+		<p align="justify">Un système de régulation de température est basé sur le composant LM35. La chaine de mesure et la conversion de l'information sont décrites figures 1 et 2. Le protocole de communication utilisé est décrit figure 3.</p>
+		<p>En exploitant ces informations :</p>
+		<ol>
+			<li>En respectant la description du protocole, déterminer la valeur décimale correspondant au chronogramme de la figure 4;</li>
+			<li>Calculer le température correspondante</li>
+		</ol>
+	</font>
+		<p align="middle"><img src="../Images/P7_6.png" alt="P7_4"></p>
+		<p align="middle"><img src="../Images/P7_8.png" alt="P7_5"></p>
+		<p align="middle"><img src="../Images/P7_7.png" alt="P7_4"></p>
+		<p align="middle"><img src="../Images/P7_9.png" alt="P7_5"></p>
+		<a href="../Pages/S2_E_exercice4.html">Exercice 4 : Réponses</a><br>
+		<a href="#haut">Retour en haut de la page</a><br>
+<hr>
+
+<h3>Exercice 5: Transmettre des informations</h3>
+		<font size="4" color="black">
+			<p align="justify">Un dispositif d’acquisition du signal sur une éolienne véhicule les informations des capteurs de vitesse et direction du vent sur un bus CAN en hexadécimal. Un logiciel (PCANView) nous permet de lire les trames envoyées. Sur l'image ci-dessous, les octets DATA7 (LSB) et DATA6 (MSB) représentent l'information de vitesse de vent apparent les octets DATA5 (LSB) et DATA4 (MSB) représentent l'information d'angle de vent apparent.</p>
+		<p align="middle"><img src="../Images/P7_Eolienne_1.png" alt="P7_Eolienne_1"></p>
+		<p>Dans la trame 09FD0201h ci-dessus :</p>
+		<ol>
+			<li>Identifier et relever les valeurs des champs qui contiennent les données de la vitesse du vent et de son orientation;</li>
+			<li>Quelle est la valeur décimale de la vitesse du vent dans cette trame ? Exprimer votre résultat en m/s;</li>
+			<li>Quelle est la valeur décimale de l’orientation du vent dans cette trame ? Exprimer votre résultat en degrés.</li>
+		</ol>
+	</font>
+		
+		<a href="../Pages/S2_E_exercice5.html">Exercice 5 : Réponses</a><br>
+		<a href="#haut">Retour en haut de la page</a><br>
+</section>
+<hr><br>
+<hr><br>
+
+</div>
+</body>
+</html>
+

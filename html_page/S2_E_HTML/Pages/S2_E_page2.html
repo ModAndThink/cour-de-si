@@ -1,0 +1,193 @@
+<html>
+<head>
+	<title>SI-S2-TP-Les capteurs</title>
+	<link rel="stylesheet" href="../SI_Style.css" />
+</head>
+<body>
+	<a name="haut"></a>
+	<h1>S.I. - S2 - Echanges et communication d'informations </h1><br>
+<div id="Bande-BasPage" >Page optimisée pour Firefox -------------------------------- AC@NDSF</div>
+	<div id="menu">
+		<p></p>
+		<img align="right" src="../Images/Teams Image 1SI.JPG">
+		<h2 align="middle">Séquence 2</h2>
+		<ul>
+			<li><a href="../S2_E_index.html">Accueil</a></li>
+			<li><a href="../Pages/S2_E_page1.html">ARDUINO</a></li>
+			<li><a href="../Pages/S2_E_page2.html">Les capteurs</a></li>
+			<li><a href="../Pages/S2_E_page3.html">Résultats attendus</a></li>
+			<li><a href="../Pages/S2_E_page4.html">Compétences</a></li>
+		</ul>
+	</div>
+
+<div id="page">
+			<img align="right" src="../Images/ARDUINO.PNG" alt="Carte Arduino UNO">
+		<h2>Les capteurs</h2>
+		<h3>Ce qu'il faut comprendre</h3>
+		<font size="5" color="black">
+			<ul>
+				<li><a href="#C1">Capteur de température;</a></li>
+				<li><a href="#C2">Capteur d'intensité;</a></li>
+				<li><a href="#C3">Capteur de tension;</a></li>
+				<li><a href="#C4">Capteur de position TOR;</a></li>
+				<li><a href="#C5">Potentiomètre de consigne;</a></li>
+				<li><a href="#C6">Capteur de rotation (codeur);</a></li>
+				<li><a href="#C7">Driver moteur;</a></li>
+				<li><a href="#C8">Afficheur.</a></li>
+				<li><a href="#C9">Capteur optique GT1140.</a></li>
+			</ul>
+		</font>
+<hr>
+	<section id="C1">
+		<h2>Capteur de température</h2>
+		<font size="5" color="black">
+			<img align="right"src="../Images/C1_LM35_0.png" alt="C1_LM35_0">
+			<p align="justify">Ce capteur de température linéaire Arduino est basé sur le composant LM35. La tension de sortie est proportionnelle à la température. L’étendue de mesure est  de 0°C à 100°C. La sensibilité est de 10 mV /°C. </p>
+			<p align="justify"></p>
+		</font>
+		<p></p>
+		<p align="middle"><img src="../Images/C1_LM35_1.png" alt="C1_LM35_1"></p>
+		<a href="https://wiki.dfrobot.com/DFRobot_LM35_Linear_Temperature_Sensor__SKU_DFR0023_" target=_blank>Notice</a><br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+			
+<hr>
+	<section id="C2">
+		<h2>Capteur d'intensité</h2>
+		<img align="right"src="../Images/C2_Gravity_0.png" alt="C2_Gravity_0">
+		<font size="5" color="black">
+			<p align="justify">Ce capteur de courant Gravity Analog est basé sur le principe de détection de courant par effet Hall. Il peut être utilisé pour la mesure d'intensité alternative ou continue.</p>
+			<p align="justify"></p>
+		</font>
+		<p></p>
+		<p align="middle"><img src="../Images/C2_Gravity_1.png" alt="C2_Gravity_1"></p>
+		<a href="https://wiki.dfrobot.com/20A_Current_Sensor_SKU_SEN0214" target=_blank>Notice</a><br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+
+<hr>
+	<section id="C3">
+		<h2>Capteur de tension</h2>
+		<img align="right"src="../Images/C3_Gravity_0.png" alt="C3_Gravity_0">
+		<font size="5" color="black">
+			<p align="justify">Ce capteur renvoie une valeur analogique (tension) comprise entre 0 et 5 Vcc. La tension maximale mesurable est de 25 Vcc. Ce capteur est basé sur un pont diviseur de tension.</p>
+			<p align="justify"></p>
+		</font>
+		<p></p>
+		<p align="middle"><img src="../Images/C3_Gravity_1.png" alt="C3_Gravity_1"></p>
+		<a href="https://wiki.dfrobot.com/Analog_Voltage_Divider_SKU__DFR0051" target=_blank>Notice</a><br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+
+	<hr>
+	<section id="C4">
+		<h2>Capteur de position TOR</h2>
+		<img align="right"src="../Images/C4_Gravity_0.png" alt="C4_Gravity_0">
+		<font size="5" color="black">
+			<p align="justify">Ces capteurs permettront de stopper le travelling. Seul l’utilisateur pourra commander le démarrage dans le sens inverse. Cette commande de démarrage devra être assurée par un capteur TOR sur l’IHM.</p>
+			<p align="justify"></p>
+		</font>
+		<p></p>
+		<p align="middle"><img src="../Images/C4_Gravity_1.png" alt="C4_Gravity_1"></p>
+		<a href="https://wiki.dfrobot.com/DFRobot_Digital_Push_Button_SKU_DFR0029#Sample_Code" target=_blank>Notice</a><br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+
+	<hr>
+	<section id="C5">
+		<h2>Potentiomètre de consigne</h2>
+		<img align="right"src="../Images/C5_Gravity_0.png" alt="C5_Gravity_0">
+		<font size="5" color="black">
+			<p align="justify">Ce potentiomètre permet de donner la consigne de vitesse, elle sera affichée. Cette valeur nous permettra de corréler les résultats de vitesse avec la tension aux bornes du moteur et la vitesse de rotation effective donnée par le codeur. Le potentiomètre utilisé est un potentiomètre 10 tours.</p>
+			<p align="justify"></p>
+		</font>
+		<p></p>
+		<p align="middle"><img src="../Images/.png" alt=""></p>
+		<a href="https://wiki.dfrobot.com/DFRobot_Digital_Push_Button_SKU_DFR0029#Sample_Code" target=_blank>Notice</a><br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+	<hr>
+	<section id="C6">
+		<h2>Capteur de rotation (codeur)</h2>
+		<img align="right"src="../Images/C6_Cytron_0.png" alt="C6_Cytron_0">
+		<font size="5" color="black">
+			<p align="justify">Ce capteur est un encodeur rotatif muni d'un disque à fentes et d'une carte équipée du capteur. Il est utilisé pour convertir les données du mouvement rotatif en une série d'impulsions électriques. Sur la carte il y a un DEL qui s'allume en même temps que le signal.</p>
+			<p align="justify"></p>
+		</font>
+		<p></p>
+		<p align="middle"><img src="../Images/C6_Cytron_1.png" alt="C6_Cytron_1"></p>
+		<a href="https://www.robotshop.com/media/files/PDF/users-manual-re08a.pdf" target=_blank>Notice</a><br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+
+	<hr>
+	<section id="C7">
+		<h2>Driver moteur</h2>
+		
+		<font size="5" color="black">
+			<img align="right"src="../Images/P3-Driver_moteur.png" alt="P3-Driver_moteur">
+			<p align="justify">Lorsqu’on utilise une ARDUINO UNO il est primordial de comprendre que cette carte microcontrôleur ne peut distribuer une quantité d’ampères infinie. La documentation relative à la carte montre que le courant total « i » demandé à la carte ne peut excéder 200 mA maxi et que chaque sortie « in » ne supporte pas de courant supérieur à 40 mA. Ces caractéristiques montrent qu’il est nécessaire d’utiliser une carte supplémentaire capable de distribuer un courant supérieur ou relayer les sorties. De plus la tension est limitée à 5 Vcc. Soit une puissance maxi de 1 watt.</p>
+			<p align="justify">Le driver OSEPP MTD01 est un contrôleur à double pont en H (Imax 2A). Il peut supporter un courant de 2 A. Il est basé sur le composant L298N qui permet la commande d’un moteur pas à pas  quatre fils ou deux moteurs CC. C’est une commande MLI (PWM) pilotée par un microprocesseur et un double pont en pont en H. Le dispositif MLI (Modulation de largeur d’impulsion) est une alimentation intermittente à haute fréquence du moteur (environ 20 kHz). Un pont en H piloté par des transistors de puissance permet l’usage du MCC dans les deux sens. Il est équipé de diodes (roue libre) afin de dissiper les courants induits lors de l’arrêt de l’alimentation du MCC.</p>
+			<ul>
+				<li>Alimentation: 4,8 à 46 Vcc maxi</li>
+				<li>Consommation: 2 A par moteur maxi</li>
+			</ul>		
+			<p align="justify">Cette carte permet de piloter des moteurs. Le driver permet d'agir sur :</p>
+			<ul>
+				<li>La vitesse des moteurs;</li>
+				<li>Le sens de rotation des moteurs;</li>
+				<li>Le freinage des moteurs.</li>
+			</ul>
+		</font>
+		
+		<h3>Ressources</h3>
+			<ul>
+				<li><a href="https://www.osepp.com/electronic-modules/breakout-boards/92-osepp-motor-driver-module" target=_blank>Notice</a><br></li>
+			</ul>
+		<br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+
+	<hr>
+	<section id="C8">
+		<h2>Afficheur</h2>
+		<img align="right"src="../Images/P3_AfficheurI2C.png" alt="P3_AfficheurI2C">
+		<font size="5" color="black">
+			<p align="justify">Les écrans LCD standards nécessitent plusieurs E / S sur le contrôleur. Cela restreint les autres fonctions du contrôleur. L’écran LCD2004 est muni d’un bus I2C . Il s'agit d'un bus série (Bus série, 8 bits, bidirectionnel) haute performance qui n'a que deux lignes de signal bidirectionnelles, la ligne de données série (SDA) et la ligne d'horloge série (SCL). Il est basé sur le principe « maitre esclave ».</p>
+			<p align="justify">Ce protocole [I2C] permet la communication entre des composants électronique très divers grâce à seulement trois fils, mais il nécessite l'intégration d'un "protocole de communication" dans le programme. Ce protocole se présente sous la forme d'une "bibliothèque" (libraries) qu'il faut intégrer au code ARDUINO pour permettre la communication.</p>
+		</font>
+		<h3>Ressources</h3>
+			<ul>
+				<li><a href="https://www.gotronic.fr/pj2-sbc-lcd20x4-fr-1440.pdf" target=_blank>Notice</a><br></li>
+			</ul>
+		<br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+	<hr>
+
+<section id="C9">
+		<h2>Module suiveur de ligne GT1140</h2>
+		<font size="5" color="black">
+			<img align="right"src="../Images/Capteur GT1140.png" alt="GT1140">
+			<p align="justify">Ce module suiveur de ligne est basé sur un réflecteur optique et un amplificateur. Le seuil de déclenchement du signal digital est réglable via un potentiomètre ajustable. </p>
+			<ul>
+				<li>Alimentation: 3,3 à 5 Vcc</li>
+				<li>Consommation: 20 mA</li>
+				<li>Etat bas: ligne noire</li>
+				<li>Etat haut: ligne blanche</li>
+			</ul>
+			<p align="justify"></p>
+		</font>
+		<p></p>
+		
+		<a href="https://www.gotronic.fr/pj2-35238-2286.pdf" target=_blank>Notice</a><br>
+		<a href="#haut">Retour en haut de la page</a>
+	</section><hr><br>
+
+	</section><hr><br>
+
+</div>
+
+</body>
+</html>
+
